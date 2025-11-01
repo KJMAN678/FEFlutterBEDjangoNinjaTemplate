@@ -1,0 +1,8 @@
+.envrc
+__pycache__/
+.mypy_cache/
+.venv/
+backend/images/*
+!backend/images/.gitkeep
+.pytest_cache/
+.ruff_cache/
