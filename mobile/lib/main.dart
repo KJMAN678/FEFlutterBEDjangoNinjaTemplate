@@ -30,7 +30,7 @@ class TakePictureScreen extends StatefulWidget {
   TakePictureScreenState createState() => TakePictureScreenState();
 }
 
-class TakePictureScreenState extends State<TakePictureScreen> {
+class TakePictureScreenState extends State<TakePictureScreen> with WidgetsBindingObserver {
   late CameraController _controller;
   late Future<void> _initializeControllerFuture;
 
@@ -51,7 +51,19 @@ class TakePictureScreenState extends State<TakePictureScreen> {
     // Next, initialize the controller. This returns a Future.
     _initializeControllerFuture = _controller.initialize();
 
+    // アプリのライフサイクルを監視
+    WidgetsBinding.instance.addObserver(this);
+
     _callApi();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    super.didChangeAppLifecycleState(state);
+    // アプリがフォアグラウンドに戻ったときに最新の値を取得
+    if (state == AppLifecycleState.resumed) {
+      _callApi();
+    }
   }
 
   Future<void> _callApi() async {
@@ -95,6 +107,7 @@ class TakePictureScreenState extends State<TakePictureScreen> {
   @override
   void dispose() {
     // Dispose of the controller when the widget is disposed.
+    WidgetsBinding.instance.removeObserver(this);
     _controller.dispose();
     super.dispose();
   }
@@ -147,6 +160,8 @@ class TakePictureScreenState extends State<TakePictureScreen> {
                 ),
               ),
             );
+            // 画面から戻ってきたときに最新の値を取得
+            _callApi();
             await _controller.resumePreview();
           } catch (e) {
             // If an error occurs, log the error to the console.
