@@ -91,7 +91,7 @@ $ docker compose exec backend uv run pytest
 $ docker compose exec backend uv run mypy .
 ```
 
-http://127.0.0.1:8080/api/count_saved_images
+http://127.0.0.1:8080/api/count_saved_images/
 http://127.0.0.1:8080/admin/
 
 
