@@ -1,4 +1,4 @@
-FROM python:3.13-slim-bookworm
+FROM python:3.14-slim-bookworm
 COPY --from=ghcr.io/astral-sh/uv:0.9.15 /uv /bin/uv
 
 # Sync the project into a new environment, using the frozen lockfile
