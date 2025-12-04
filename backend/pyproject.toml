@@ -1,32 +1,31 @@
 [project]
-name = "fe-nextjs-be-django"
+name = "fe-flutter-be-django-ninja"
 version = "0.1.0"
-description = "FE Next.js BE Django"
+description = "FE Flutter BE Django Ninja"
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.13,<3.14"
 dependencies = [
-    "Django==5.2.8",
-    "django-ninja==1.4.3",
-    "django-filter==25.1",
+    "Django==5.2.9",
+    "django-ninja==1.5.1",
+    "django-filter==25.2",
     "django-cors-headers==4.9.0",
-    "gunicorn==22.0.0",
+    "gunicorn==23.0.0",
     "pillow==12.0.0",
     "whitenoise==6.11.0",
     "opencv-python-headless==4.12.0.88",
     "opencv-contrib-python-headless==4.12.0.88",
     "matplotlib==3.10.7",
+    "psycopg2==2.9.11",
 ]
 
 [dependency-groups]
 dev = [
-    "ruff==0.13.0",
-    "pytest==8.4.2",
-    "mypy==1.18.2",
+    "ruff==0.14.7",
+    "pytest==9.0.1",
+    "mypy==1.19.0",
     "pytest-django==4.11.1",
     "factory-boy==3.3.3",
-    "django-debug-toolbar==6.0.0",
-    "psycopg2-binary==2.9.11",
-    "django-stubs[compatible-mypy]==5.2.7",
+    "django-stubs[compatible-mypy]==5.2.8",
 ]
 
 [tool.uv]

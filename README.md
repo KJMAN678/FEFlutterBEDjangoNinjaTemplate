@@ -4,6 +4,7 @@
 $ fvm install 3.35.7
 $ fvm use 3.35.7
 
+### Android
 - スマホとPCを同じWifiにつなげる
 - 開発者モード -> ワイヤレスデバッグ -> ペア設定コード を確認して、「IPアドレスとポート」をhogehogeの部分に入力
 - 下記を入力後、表示されているペア設定コードを入力
@@ -21,6 +22,9 @@ $ fvm flutter run -d $DEVICE_ID --dart-define=API_URL=$API_URL
 
 # fvm の Java の version をインストール済みのものと合わせる
 $ fvm flutter config --jdk-dir=/opt/homebrew/Cellar/openjdk@21/21.0.9/libexec/openjdk.jdk/Contents/Home
+
+### iOS
+
 ```
 
 - リンター
