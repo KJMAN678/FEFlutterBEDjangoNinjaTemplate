@@ -216,7 +216,7 @@ requires-dist = [
     { name = "django-ninja", specifier = "==1.5.3" },
     { name = "gunicorn", specifier = "==23.0.0" },
     { name = "matplotlib", specifier = "==3.10.8" },
-    { name = "opencv-contrib-python-headless", specifier = "==4.12.0.88" },
+    { name = "opencv-contrib-python-headless", specifier = "==4.13.0.90" },
     { name = "opencv-python-headless", specifier = "==4.12.0.88" },
     { name = "pillow", specifier = "==12.1.0" },
     { name = "psycopg2", specifier = "==2.9.11" },
@@ -416,19 +416,20 @@ wheels = [
 
 [[package]]
 name = "opencv-contrib-python-headless"
-version = "4.12.0.88"
+version = "4.13.0.90"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "numpy" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/d2/2d/6ff35fa696afe2c4e3616d9560848b131353f24d9110d51baa93dd947212/opencv-contrib-python-headless-4.12.0.88.tar.gz", hash = "sha256:3d8a7b23a5faba4ad34e13f51668c56be791e57ab02d68d9016200fed3c12c77", size = 150801337, upload-time = "2025-07-07T09:20:37.432Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/33/3a/edf7380db58557cc29bdcff71862b8100c64adf489517ec7250509df4b72/opencv_contrib_python_headless-4.12.0.88-cp37-abi3-macosx_13_0_arm64.whl", hash = "sha256:a17ebb914f309afe72447c33b9187ff02f23f1483faa5c0ffde7aadc88711e2a", size = 46854919, upload-time = "2025-07-07T09:17:29.386Z" },
-    { url = "https://files.pythonhosted.org/packages/ca/0b/abacf0a9d3161cf15ee9783fab7081f1349e825844b03178bfe6fb484e96/opencv_contrib_python_headless-4.12.0.88-cp37-abi3-macosx_13_0_x86_64.whl", hash = "sha256:85b520e527052a85a682f09cdc12e5f156f56d8c277261b4b65b48431abae96f", size = 67163853, upload-time = "2025-07-07T09:17:40.97Z" },
-    { url = "https://files.pythonhosted.org/packages/93/b4/13f1370c2b8e566f9c9f3658982ecd331c666215e7f379e8b1d7ab52a63d/opencv_contrib_python_headless-4.12.0.88-cp37-abi3-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:d60a12b915c55a50468c013fcd839e941b49ccc1f37b914b62543382c36bf81d", size = 38548620, upload-time = "2025-07-07T09:17:49.086Z" },
-    { url = "https://files.pythonhosted.org/packages/b3/17/bfe5ccbaa3b15b8af3371137732e69a4563ee1b05a17e6578521c09d2a56/opencv_contrib_python_headless-4.12.0.88-cp37-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:b183e2322468c9d3bd9cac4ba44b272d828ec22842395bcfa51df31765224c0a", size = 60138674, upload-time = "2025-07-07T09:17:59.07Z" },
-    { url = "https://files.pythonhosted.org/packages/9b/2c/328488cba04909ab6f1f00ad98758cb6c4806db4904adf2d12ee988508fd/opencv_contrib_python_headless-4.12.0.88-cp37-abi3-win32.whl", hash = "sha256:902888b4e1b4826c721840d9107e91d32f146a2c3bc8cb728f0088bf44204e4b", size = 36114174, upload-time = "2025-07-07T09:18:06.818Z" },
-    { url = "https://files.pythonhosted.org/packages/44/d0/75057aac72cb7134b430a7c4c715af8a0cc68fe17c69889d64f33a5e311a/opencv_contrib_python_headless-4.12.0.88-cp37-abi3-win_amd64.whl", hash = "sha256:c57e32812fea2a542bb220088fb3ce8a210fe114c9454d1c9e8cd162e1a1fde8", size = 45190148, upload-time = "2025-07-07T09:18:15.15Z" },
+    { url = "https://files.pythonhosted.org/packages/43/18/d5d8541e71b866fa7166972960429d72df75aaf2f40e87c508501f426dc7/opencv_contrib_python_headless-4.13.0.90-cp37-abi3-macosx_13_0_arm64.whl", hash = "sha256:237b1d0229ddddc68f49c77975240bcb5a976eabdc60e5c6f988163b325849c5", size = 51810188, upload-time = "2026-01-18T08:25:01.451Z" },
+    { url = "https://files.pythonhosted.org/packages/eb/9e/63ed6323531a71310f14e3a2a5b5dfda081a7d3a98e78a8293fd8e99dcb0/opencv_contrib_python_headless-4.13.0.90-cp37-abi3-macosx_14_0_x86_64.whl", hash = "sha256:ad01a0c6a29c252588034b027ed1c2cc77d7d13cd7c8fde920c9379c2890f422", size = 38830057, upload-time = "2026-01-18T08:27:18.406Z" },
+    { url = "https://files.pythonhosted.org/packages/bc/d2/c659fddc379de99fbb098f66238eaa827027a40fa812994a6611fa22bcf5/opencv_contrib_python_headless-4.13.0.90-cp37-abi3-manylinux2014_aarch64.manylinux_2_17_aarch64.whl", hash = "sha256:11825131b24bf21cb9dd08bffdd7d101ae63be524609d420be57ce55bef3bf55", size = 40841572, upload-time = "2026-01-18T08:28:48.556Z" },
+    { url = "https://files.pythonhosted.org/packages/f1/6d/690d1bf10c56c6b1ade56f23e2b971c37259b1cf7f67ea4dbbf0e42ab7e1/opencv_contrib_python_headless-4.13.0.90-cp37-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", hash = "sha256:d963aa47211a0dd38038fb7a0e57d7c80b7967f391a7b63c3a6c0627746f8440", size = 63814735, upload-time = "2026-01-18T08:52:26.814Z" },
+    { url = "https://files.pythonhosted.org/packages/fb/4a/4ea97d72aa1b6c20f1a4ab5372bf0646692a62ed4291e223f4b39509cb3d/opencv_contrib_python_headless-4.13.0.90-cp37-abi3-manylinux_2_28_aarch64.whl", hash = "sha256:e1356083072dad86996ee404b8c6daf79d81f4796a5cb72f4ed85cb57ed62673", size = 42419875, upload-time = "2026-01-18T08:53:04.959Z" },
+    { url = "https://files.pythonhosted.org/packages/ff/e7/76eaca13c8308f8306b1f3a0e5f897a0aa32d26b18ea6bf44136ff665856/opencv_contrib_python_headless-4.13.0.90-cp37-abi3-manylinux_2_28_x86_64.whl", hash = "sha256:88dbf2a52dab02752e8dc32043102787e32244c4177624833fc114fddd663f0a", size = 68755398, upload-time = "2026-01-18T08:54:28.716Z" },
+    { url = "https://files.pythonhosted.org/packages/78/e1/1e356681baf3bd25adf09d44059c26f1812b3b84ee52301e6777b60febad/opencv_contrib_python_headless-4.13.0.90-cp37-abi3-win32.whl", hash = "sha256:d409ab50491b9a3394906536dfc92b3817789078acabe90c6c4b44abcf90c819", size = 36708185, upload-time = "2026-01-18T08:54:55.067Z" },
+    { url = "https://files.pythonhosted.org/packages/9d/11/34a5309c67dd2e4b98037d0aa7aac6c86a688205ee790da417dd9cba9528/opencv_contrib_python_headless-4.13.0.90-cp37-abi3-win_amd64.whl", hash = "sha256:9358a3dc341eee4af92051f51cca880c04148fb4f5226d856f0a9c9c936e7015", size = 46345005, upload-time = "2026-01-18T08:56:16.725Z" },
 ]
 
 [[package]]
