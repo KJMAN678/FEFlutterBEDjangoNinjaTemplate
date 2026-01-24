@@ -6,3 +6,7 @@ backend/images/*
 !backend/images/.gitkeep
 .pytest_cache/
 .ruff_cache/
+
+# FVM Version Cache
+.fvm/
+.vscode/
