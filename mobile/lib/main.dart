@@ -31,7 +31,8 @@ class TakePictureScreen extends StatefulWidget {
 }
 
 // TODO: アプリのライフサイクル変更時にカメラコントローラの状態を処理することを検討する
-class TakePictureScreenState extends State<TakePictureScreen> with WidgetsBindingObserver {
+class TakePictureScreenState extends State<TakePictureScreen>
+    with WidgetsBindingObserver {
   late CameraController _controller;
   late Future<void> _initializeControllerFuture;
 

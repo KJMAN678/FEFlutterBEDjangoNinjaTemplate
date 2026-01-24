@@ -1,8 +1,17 @@
 ### FE flutter
 
 ```sh
-$ fvm install 3.35.7
-$ fvm use 3.35.7
+$ cd mobile
+
+- 最新バージョンを確認
+$ fvm release
+
+$ fvm install 3.38.7
+$ fvm use 3.38.7
+
+- 依存関係の更新
+$ fvm flutter pub outdated
+$ fvm flutter pub upgrade
 
 ### Android
 - スマホとPCを同じWifiにつなげる
@@ -24,7 +33,26 @@ $ fvm flutter run -d $DEVICE_ID --dart-define=API_URL=$API_URL
 $ fvm flutter config --jdk-dir=/opt/homebrew/Cellar/openjdk@21/21.0.9/libexec/openjdk.jdk/Contents/Home
 
 ### iOS
+- 初回、Xcodeで「ワイヤレスデバッグ」設定
+  - iOSは adb pair / adb connect は使わず、Xcode側でペアリング/ネットワーク接続します。
+  - 初回はUSBでiPhoneをMacに接続して「このコンピュータを信頼」を許可
+  - Xcode → Window > Devices and Simulators を開く
+  - 左で対象iPhoneを選び、必要なら Pair（ペアリング） を押して、iPhone側に出るコードを入力
+  - 詳細の “Connect via network”（ネットワーク経由で接続）にチェック → 左の端末にネットワークアイコンが出ればOK
+  - USBを抜いても接続が維持される
 
+- iPhone でデベロッパーの証明書を信頼する
+  - 設定 >「一般」>「VPNとデバイス管理」（または「プロファイル」）に進み、該当するデベロッパ（通常は「Apple Development: 開発者名」）を選択して「信頼」をタップ
+
+$ fvm flutter devices
+
+$ fvm flutter build ios --debug
+- 上記のコマンドで表示されるIDをxxx部分に指定
+$ export IPHONE_DEVICE_ID=xxx
+$ fvm flutter run -d $IPHONE_DEVICE_ID --no-hot --dart-define=API_URL="$API_URL"
+
+- 参考: ログを詳細に吐き出す
+$ fvm flutter run -d $IPHONE_DEVICE_ID -v --no-hot --dart-define=API_URL="$API_URL"
 ```
 
 - リンター
@@ -53,7 +81,6 @@ $ open coverage/html/index.html
 
 ```sh
 $ touch .envrc
-or
 $ cp .envrc.example .envrc
 
 $ brew install direnv
